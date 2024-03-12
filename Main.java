@@ -28,12 +28,14 @@ public class Main {
         //Create a stack
         Stack<Character> stack = new Stack<>();
 
-        //Does operation depending on whether string is even or odd
+        
+        //Split the string into two even substrings first
         String sub1 = inputString.substring(0, stringLength / 2);
         String sub2;
-
+        
+        //Does operation depending on whether string is even or odd
         if (stringLength % 2 == 0) {
-            //Split the string into two even substrings first
+    
             sub2 = inputString.substring(stringLength / 2);
         } else {
             sub2 = inputString.substring(stringLength / 2 + 1);
